@@ -1,0 +1,80 @@
+.submenu
+  display: none
+  justify-content: center
+  align-items: center
+  color: #fff
+  font-size: 14px
+  line-height: 1
+  text-transform: uppercase
+  font-family: Ubuntu,sans-serif
+  font-weight: 700
+  text-decoration: none
+  padding: 30px 0
+  & .submenu__pic
+    margin-right: 8px
+
+.menu
+  margin-right: -60px
+  margin-left: -60px
+  display: flex
+  justify-content: flex-end
+  background: #292929
+  padding-right: 60px
+  padding-left: 60px
+
+.nav__wrapper
+  width: 57.307%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-left: 40px
+  margin-right: 40px
+
+.menu__list
+  margin: 0
+  padding: 0
+  list-style: none
+  width: 100%
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  flex-wrap: wrap
+
+.menu__list-item
+  position: relative
+  &.menu__list-item--active
+    border-bottom: 2px solid #7db900
+  a
+    display: flex
+    align-items: center
+    padding: 28px 15px
+    text-decoration: none
+    color: #fff
+    font-size: 14px
+    text-transform: uppercase
+    font-family: Ubuntu,sans-serif
+    font-weight: 500
+    line-height: 1
+    white-space: nowrap
+
+.list-item__submenu
+  position: absolute
+  top: 72px
+  left: 0
+  list-style: none
+  margin: 0
+  padding: 10px 0
+  background: #292929
+  white-space: nowrap
+
+@media screen and (max-width: 992px)
+  .menu
+    margin-left: -20px
+    margin-right: -20px
+    padding-right: 20px
+    padding-left: 20px
+    justify-content: center
+  .submenu
+    display: flex
+  .nav__wrapper
+    display: none
