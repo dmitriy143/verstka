@@ -1,17 +1,21 @@
 nav.menu
+  input.menu__show(type="checkbox" id="btn")
   div.submenu
-    div.submenu__pic
-      i.fas.fa-bars
-    div.submenu__text menu
-  div.nav__wrapper
+    label.submenu__checkbox(for="btn" tabindex="1")
+      | menu
+  div.menu__content.nav__wrapper
     ul.menu__list
       li.menu__list-item.menu__list-item--active
         a(href="#") home
+        label.fas.fa-sort-down(for="btn-home")
+        input(type="checkbox" id="btn-home")
         ul.list-item__submenu
           li
             a(href="#") Home No Sidebar
       li.menu__list-item
         a(href="#") pages
+        label.fas.fa-sort-down(for="btn-pages")
+        input(type="checkbox" id="btn-pages")
         ul.list-item__submenu
           li
             a(href="#") Testimonial
@@ -24,11 +28,34 @@ nav.menu
             a(href="#") 404 Page
       li.menu__list-item
         a(href="#") rooms
+        label.fas.fa-sort-down(for="btn-rooms")
+        input(type="checkbox" id="btn-rooms")
+        ul.list-item__submenu
+          li
+            a(href="#") Standart
+            a(href="#") Grid
+            a(href="#") List
+            a(href="#") Single Room
+            a(href="#") Single Room No Sidebar
+            a(href="#") Book Online
       li.menu__list-item
         a(href="#") blog
+        label.fas.fa-sort-down(for="btn-blog")
+        input(type="checkbox" id="btn-blog")
+        ul.list-item__submenu
+          li
+            a(href="#") Single Post No Sidebar
+            a(href="#") Single Post
       li.menu__list-item
         a(href="#") activities
       li.menu__list-item
         a(href="#") contacts us
       li.menu__list-item
         a(href="#") blocks
+        label.fas.fa-sort-down(for="btn-blocks")
+        input(type="checkbox" id="btn-blocks")
+        ul.list-item__submenu
+          li
+            a(href="#") Blocks 01
+            a(href="#") Blocks 02
+            a(href="#") Blocks 03

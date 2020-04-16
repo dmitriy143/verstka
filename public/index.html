@@ -24,27 +24,49 @@
           </div>
         </div>
         <nav class="menu">
+          <input class="menu__show" type="checkbox" id="btn"/>
           <div class="submenu">
-            <div class="submenu__pic"><i class="fas fa-bars"></i></div>
-            <div class="submenu__text">menu</div>
+            <label class="submenu__checkbox" for="btn" tabindex="1">menu</label>
           </div>
-          <div class="nav__wrapper">
+          <div class="menu__content nav__wrapper">
             <ul class="menu__list">
               <li class="menu__list-item menu__list-item--active"><a href="#">home</a>
+                <label class="fas fa-sort-down" for="btn-home"></label>
+                <input type="checkbox" id="btn-home"/>
                 <ul class="list-item__submenu">
                   <li><a href="#">Home No Sidebar</a></li>
                 </ul>
               </li>
               <li class="menu__list-item"><a href="#">pages</a>
+                <label class="fas fa-sort-down" for="btn-pages"></label>
+                <input type="checkbox" id="btn-pages"/>
                 <ul class="list-item__submenu">
                   <li><a href="#">Testimonial</a><a href="#">Gallery</a><a href="#">Typography Page</a><a href="#">Grid Page No Sidebar</a><a href="#">Sidebar Left</a><a href="#">Sidebar Right</a><a href="#">No Sidebar</a><a href="#">404 Page</a></li>
                 </ul>
               </li>
-              <li class="menu__list-item"><a href="#">rooms</a></li>
-              <li class="menu__list-item"><a href="#">blog</a></li>
+              <li class="menu__list-item"><a href="#">rooms</a>
+                <label class="fas fa-sort-down" for="btn-rooms"></label>
+                <input type="checkbox" id="btn-rooms"/>
+                <ul class="list-item__submenu">
+                  <li><a href="#">Standart</a><a href="#">Grid</a><a href="#">List</a><a href="#">Single Room</a><a href="#">Single Room No Sidebar</a><a href="#">Book Online</a></li>
+                </ul>
+              </li>
+              <li class="menu__list-item"><a href="#">blog</a>
+                <label class="fas fa-sort-down" for="btn-blog"></label>
+                <input type="checkbox" id="btn-blog"/>
+                <ul class="list-item__submenu">
+                  <li><a href="#">Single Post No Sidebar</a><a href="#">Single Post</a></li>
+                </ul>
+              </li>
               <li class="menu__list-item"><a href="#">activities</a></li>
               <li class="menu__list-item"><a href="#">contacts us</a></li>
-              <li class="menu__list-item"><a href="#">blocks</a></li>
+              <li class="menu__list-item"><a href="#">blocks</a>
+                <label class="fas fa-sort-down" for="btn-blocks"></label>
+                <input type="checkbox" id="btn-blocks"/>
+                <ul class="list-item__submenu">
+                  <li><a href="#">Blocks 01</a><a href="#">Blocks 02</a><a href="#">Blocks 03</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </nav>
